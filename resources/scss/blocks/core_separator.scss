@@ -1,0 +1,5 @@
+.wp-block-separator {
+    &:not(.is-style-wide, .is-style-dots) {
+        width: 80px;
+    }
+}

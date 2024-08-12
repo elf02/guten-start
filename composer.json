@@ -1,0 +1,22 @@
+{
+    "name": "elf02/guten-start",
+    "authors": [
+        {
+            "name": "elf02",
+            "email": "chris@elf02.de"
+        }
+    ],
+    "license": "GPL-3.0",
+    "require": {
+        "php": "^8.0",
+        "symfony/var-dumper": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gust\\": "src/"
+        },
+        "files": [
+            "src/_helpers.php"
+        ]
+    }
+}

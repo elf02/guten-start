@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+button,
+input,
+textarea,
+.wp-element-button {
+    transition: all 0.2s ease-in-out;
+}
+
+b,
+strong,
+th {
+    font-weight: var(--wp--custom--font-weight--medium);
+}
+
+input,
+select,
+textarea {
+    background-color: var(--wp--preset--color--base);
+    border: 1px solid var(--wp--preset--color--contrast);
+    border-radius: 0;
+    color: var(--wp--preset--color--contrast);
+    font-family: inherit;
+    font-size: var(--wp--preset--font-size--medium);
+    font-weight: var(--wp--custom--font-weight--light);
+    line-height: var(--wp--custom--line-height--medium);
+    padding: 10px 15px;
+    width: 100%;
+}
+
+:where(a, a:focus, a:hover):not(.wp-element-button) {
+    text-decoration-thickness: 1px;
+}
+
+:where(input, textarea):focus {
+    filter: brightness(95%);
+    outline: none;
+}
+
+input:where([type="checkbox"], [type="image"], [type="radio"]) {
+    width: auto;
+}
+
+input:where([type="button"], [type="email"], [type="search"], [type="submit"], [type="text"]),
+textarea {
+    appearance: none;
+}
+
+::placeholder {
+    color: var(--wp--preset--color--contrast);
+    font-size: var(--wp--preset--font-size--small);
+    opacity: 0.5;
+}
+
+.wp-element-button,
+.wp-block-button__link {
+    width: auto;
+}

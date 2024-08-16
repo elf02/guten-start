@@ -25,7 +25,7 @@ composer install
 npm install
 ```
 For development you may add the following lines in your wp-config.php
-```bash
+```php
 define( 'WP_ENVIRONMENT_TYPE', 'local' );
 define( 'WP_DEVELOPMENT_MODE', 'theme' );
 ```

@@ -1,9 +1,9 @@
 <?php
 
-namespace Gust;
+namespace elf02\Gust;
 
-use Gust\Attributes\Hook;
-use Gust\Contracts\Hookable;
+use elf02\Gust\Attributes\Hook;
+use elf02\Gust\Contracts\Hookable;
 
 class Blocks implements Hookable
 {
@@ -22,8 +22,8 @@ class Blocks implements Hookable
             [
                 'area' => 'sidebar',
                 'area_tag' => 'section',
-                'label' => __('Sidebar', 'guten-start'),
-                'description' => __('Sidebar', 'guten-start'),
+                'label' => __('Sidebar', 'gust'),
+                'description' => __('Sidebar', 'gust'),
                 'icon' => 'sidebar',
             ]
         ];
@@ -39,7 +39,7 @@ class Blocks implements Hookable
     {
         $block_pattern_categories = [
             'gust/card' => [
-                'label' => __('Cards', 'guten-start'),
+                'label' => __('Cards', 'gust'),
             ],
         ];
 

@@ -1,23 +1,23 @@
 <?php
 
-namespace Gust;
+namespace elf02\Gust;
 
-use Gust\Contracts\Hookable;
-use Gust\Attributes\Hook;
+use elf02\Gust\Contracts\Hookable;
+use elf02\Gust\Attributes\Hook;
 
 function theme(string $component = '')
 {
     static $bindings = [];
 
     if (empty($bindings)) {
-        $bindings = apply_filters('gust/components', [
+        $bindings = apply_filters('elf02/gust/components', [
             Setup::class => new Setup(),
             Assets::class => new Assets(),
             Blocks::class => new Blocks(),
             ImageSizes::class => new ImageSizes(),
         ]);
 
-        // hook attributes
+        // Hook attributes
         foreach ($bindings as $binding) {
             if (!$binding instanceof Hookable) {
                 continue;

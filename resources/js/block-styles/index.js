@@ -9,7 +9,7 @@ import {
 
 const BLOCK_STYLES = {
     'core/social-links': {
-        'outline': __('Outline', 'guten-start')
+        'outline': __('Outline', 'gust')
     }
 };
 

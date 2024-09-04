@@ -1,8 +1,8 @@
 <?php
 
-namespace Gust\Attributes;
+namespace elf02\Gust\Attributes;
 
-use Gust\Contracts\Hookable;
+use elf02\Gust\Contracts\Hookable;
 use ReflectionMethod;
 
 #[\Attribute(\Attribute::IS_REPEATABLE | \Attribute::TARGET_METHOD)]

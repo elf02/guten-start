@@ -1,9 +1,9 @@
 <?php
 
-namespace Gust;
+namespace elf02\Gust;
 
-use Gust\Attributes\Hook;
-use Gust\Contracts\Hookable;
+use elf02\Gust\Attributes\Hook;
+use elf02\Gust\Contracts\Hookable;
 
 class Assets implements Hookable
 {

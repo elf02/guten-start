@@ -1,9 +1,9 @@
 <?php
 
-namespace Gust;
+namespace elf02\Gust;
 
-use Gust\Attributes\Hook;
-use Gust\Contracts\Hookable;
+use elf02\Gust\Attributes\Hook;
+use elf02\Gust\Contracts\Hookable;
 
 class ImageSizes implements Hookable
 {
@@ -16,7 +16,7 @@ class ImageSizes implements Hookable
     #[Hook('image_size_names_choose')]
     public function image_sizes_names(array $sizes)
     {
-        $sizes['gust-lg'] = __('16:9 (Landscape)', 'guten-start');
+        $sizes['gust-lg'] = __('16:9 (Landscape)', 'gust');
 
         return $sizes;
     }

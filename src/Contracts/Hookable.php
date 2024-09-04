@@ -1,6 +1,6 @@
 <?php
 
-namespace Gust\Contracts;
+namespace elf02\Gust\Contracts;
 
 interface Hookable
 {

@@ -7,8 +7,8 @@
   "scripts": {
     "start": "wp-scripts start --webpack-src-dir=resources --output-path=public",
     "build": "wp-scripts build --webpack-src-dir=resources --output-path=public",
-    "create-block": "cd ./resources/blocks && npx @wordpress/create-block --namespace=elf02-gust --no-plugin",
-	"create-block:dynamic": "cd ./resources/blocks && npx @wordpress/create-block --namespace=elf02-gust --no-plugin --variant=dynamic"
+    "create-block": "cd ./resources/blocks && npx @wordpress/create-block@latest --namespace=elf02-gust --no-plugin",
+	"create-block:dynamic": "cd ./resources/blocks && npx @wordpress/create-block@latest --namespace=elf02-gust --no-plugin --variant=dynamic"
   },
   "devDependencies": {
     "@wordpress/scripts": "^28.5.0",

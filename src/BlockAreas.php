@@ -49,22 +49,29 @@ class BlockAreas implements Hookable
     public function frontend_query_vars($pre_render, $parsed_block)
     {
         if (
-            isset(
-                $parsed_block['attrs']['namespace'],
-                $parsed_block['attrs']['query']['postType'],
-                $parsed_block['attrs']['query']['include'][0]
-            ) &&
-            $parsed_block['attrs']['namespace'] === 'gust/block-areas-query-loop' &&
-            $parsed_block['attrs']['query']['postType'] === 'block_area'
+            isset($parsed_block['attrs']['namespace']) &&
+            $parsed_block['attrs']['namespace'] === 'gust/block-areas-query-loop'
         ) {
             add_filter(
                 'query_loop_block_query_vars',
-                function ($query) use ($parsed_block) {
-                    return [
-                        'post_type' => 'block_area',
-                        'p' => intval($parsed_block['attrs']['query']['include'][0])
-                    ];
-                }
+                function ($query, $block) {
+                    if (
+                        isset(
+                            $block->context['query']['postType'],
+                            $block->context['query']['include'][0]
+                        ) &&
+                        $block->context['query']['postType'] === 'block_area'
+                    ) {
+
+                        return [
+                            'post_type' => 'block_area',
+                            'p' => intval($block->context['query']['include'][0])
+                        ];
+                    }
+
+                    return $query;
+                },
+                10, 2
             );
         }
 

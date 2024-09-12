@@ -5,7 +5,7 @@
  * Categories: gust/sections
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Team Section"},"align":"full","className":"is-style-section-cards","layout":{"type":"constrained"}} -->
+<!-- wp:group {"templateLock": "contentOnly","metadata":{"name":"Team Section"},"align":"full","className":"is-style-section-cards","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-section-cards"><!-- wp:group {"className":"is-style-default","layout":{"type":"grid","columnCount":null,"minimumColumnWidth":"12rem"}} -->
 <div class="wp-block-group is-style-default"><!-- wp:group {"metadata":{"name":"Team Card"},"className":"is-style-section-cards-card","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-section-cards-card"><!-- wp:image {"id":8,"sizeSlug":"full","linkDestination":"none","align":"center","className":""} -->

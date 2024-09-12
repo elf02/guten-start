@@ -37,7 +37,7 @@ define( 'WP_DEVELOPMENT_MODE', 'theme' );
 
 - [Query Monitor](https://wordpress.org/plugins/query-monitor/)
 
-- [Pattern Editor](https://wordpress.org/plugins/pattern-editor/) / [Pattern Manager](https://wordpress.org/plugins/pattern-manager/)
+- [The Icon Block](https://wordpress.org/plugins/icon-block/)
 
 - [Classic Menu in Navigation Block](https://wordpress.org/plugins/classic-menu-in-navigation-block/)
 

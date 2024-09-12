@@ -34,12 +34,12 @@ class Blocks implements Hookable
         ];
     }
 
-    //#[Hook('init')]
+    #[Hook('init')]
     public function pattern_categories()
     {
         $block_pattern_categories = [
-            'gust/card' => [
-                'label' => __('Cards', 'gust'),
+            'gust/sections' => [
+                'label' => __('Sections', 'gust'),
             ],
         ];
 

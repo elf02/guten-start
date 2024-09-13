@@ -14,7 +14,6 @@ function theme(string $component = '')
             Setup::class => new Setup(),
             Assets::class => new Assets(),
             Blocks::class => new Blocks(),
-            BlockAreas::class => new BlockAreas(),
             ImageSizes::class => new ImageSizes(),
         ]);
 

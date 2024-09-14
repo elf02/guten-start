@@ -39,6 +39,8 @@ define( 'WP_DEVELOPMENT_MODE', 'theme' );
 
 - [The Icon Block](https://wordpress.org/plugins/icon-block/)
 
+- [Block Visibility](https://wordpress.org/plugins/block-visibility/)
+
 - [Classic Menu in Navigation Block](https://wordpress.org/plugins/classic-menu-in-navigation-block/)
 
 - [Advanced Query Loop](https://wordpress.org/plugins/advanced-query-loop/)

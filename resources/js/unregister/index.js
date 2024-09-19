@@ -4,11 +4,11 @@ import { VARIATIONS } from './variations';
 import { BLOCKS } from './blocks';
 
 domReady(() => {
-    VARIATIONS.forEach((variation) => {
-        unregisterBlockVariation(variation.block, variation.name);
-    });
+    Object.keys(VARIATIONS).forEach((block) =>
+        VARIATIONS[block].forEach((variation) =>
+           unregisterBlockVariation(block, variation)
+        )
+    );
 
-    BLOCKS.forEach((block) => {
-        unregisterBlockType(block);
-    });
+    BLOCKS.forEach((block) => unregisterBlockType(block));
 });

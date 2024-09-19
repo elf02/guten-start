@@ -1,17 +1,6 @@
 import domReady from '@wordpress/dom-ready';
-
-import { __ } from '@wordpress/i18n';
-
-import {
-    registerBlockStyle,
-    unregisterBlockStyle
-} from '@wordpress/blocks';
-
-const BLOCK_STYLES = {
-    'core/social-links': {
-        'outline': __('Outline', 'gust')
-    }
-};
+import { BLOCK_STYLES } from './block-styles';
+import { registerBlockStyle } from '@wordpress/blocks';
 
 domReady(() => {
     Object.keys(BLOCK_STYLES).forEach((block) =>
